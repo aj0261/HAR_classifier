@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAR Real-time Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- Include Socket.IO client library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.4/socket.io.min.js"></script>
+    <!-- Include Chart.js (Optional, for visualizations) -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>HAR Real-time Dashboard</h1>
+
+    <div class="status-container">
+        <h2>Status</h2>
+        <p>Server Connection: <span id="connection-status" class="status-disconnected">Disconnected</span></p>
+        <p>Predictor Ready: <span id="predictor-status" class="status-unknown">Unknown</span></p>
+        <p>Client SID: <span id="client-sid">N/A</span></p>
+    </div>
+
+    <div class="prediction-container">
+        <h2>Latest Prediction</h2>
+        <p>Activity: <strong id="prediction-activity">--</strong></p>
+        <p>Confidence: <span id="prediction-confidence">--</span></p>
+        <p>Model Used: <span id="prediction-model">--</span></p>
+        <p>Data Timestamp: <span id="prediction-timestamp">--</span></p>
+        <p>Processing Time: <span id="prediction-duration">--</span> ms</p>
+        <p>Last Error: <span id="prediction-error" class="error-message">None</span></p>
+    </div>
+
+    <div class="insights-container">
+        <h2>Insights (Example)</h2>
+        <p>Total Predictions Received: <span id="total-predictions">0</span></p>
+        <div>
+             <h3>Activity Counts</h3>
+             <ul id="activity-counts">
+                 <!-- Counts will be added here by JS -->
+             </ul>
+        </div>
+         <!-- Optional Chart Area -->
+         <!-- <div style="width: 75%; margin: auto;">
+             <canvas id="activityChart"></canvas>
+         </div> -->
+    </div>
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>

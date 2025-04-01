@@ -1,0 +1,78 @@
+/* static/css/style.css */
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  margin: 20px;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+h1, h2 {
+  color: #0056b3;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 5px;
+}
+
+.status-container, .prediction-container, .insights-container {
+  background-color: #fff;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.status-container p, .prediction-container p, .insights-container p {
+  margin: 8px 0;
+}
+
+#prediction-activity {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #12a830; /* Example color */
+}
+
+.status-connected {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.status-disconnected {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+.status-unknown {
+  color: #ffc107;
+  font-weight: bold;
+}
+.status-error{
+  color: #dc3545;
+  font-weight: bold;
+  background-color: #f8d7da;
+  padding: 2px 5px;
+  border-radius: 4px;
+}
+
+.error-message {
+  color: #dc3545;
+  font-weight: bold;
+  background-color: #f8d7da;
+  padding: 5px;
+  border-radius: 4px;
+  display: inline-block; /* Or block if needed */
+}
+
+#activity-counts li {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  margin-bottom: 4px;
+}
+
+strong {
+  color: #333;
+}
+
+span {
+   color: #555;
+}
