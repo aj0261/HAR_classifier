@@ -1,0 +1,195 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.harclassifier"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="30"
+9        android:targetSdkVersion="35" />
+10
+11    <!-- Permissions -->
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->C:\Users\gontu\AndroidStudioProjects\HarClassifier\app\src\main\AndroidManifest.xml:6:5-67
+12-->C:\Users\gontu\AndroidStudioProjects\HarClassifier\app\src\main\AndroidManifest.xml:6:22-64
+13    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+13-->C:\Users\gontu\AndroidStudioProjects\HarClassifier\app\src\main\AndroidManifest.xml:7:5-77
+13-->C:\Users\gontu\AndroidStudioProjects\HarClassifier\app\src\main\AndroidManifest.xml:7:22-74
+14    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_HEALTH" />
+14-->C:\Users\gontu\AndroidStudioProjects\HarClassifier\app\src\main\AndroidManifest.xml:8:5-84
+14-->C:\Users\gontu\AndroidStudioProjects\HarClassifier\app\src\main\AndroidManifest.xml:8:22-81
+15    <uses-permission android:name="android.permission.BODY_SENSORS" />
+15-->C:\Users\gontu\AndroidStudioProjects\HarClassifier\app\src\main\AndroidManifest.xml:9:5-71
+15-->C:\Users\gontu\AndroidStudioProjects\HarClassifier\app\src\main\AndroidManifest.xml:9:22-68
+16    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+16-->C:\Users\gontu\AndroidStudioProjects\HarClassifier\app\src\main\AndroidManifest.xml:10:5-76
+16-->C:\Users\gontu\AndroidStudioProjects\HarClassifier\app\src\main\AndroidManifest.xml:10:22-74
+17    <uses-permission android:name="android.permission.WAKE_LOCK" />
+17-->C:\Users\gontu\AndroidStudioProjects\HarClassifier\app\src\main\AndroidManifest.xml:11:5-68
+17-->C:\Users\gontu\AndroidStudioProjects\HarClassifier\app\src\main\AndroidManifest.xml:11:22-65
+18    <!-- Optional: Network state permissions if needed later -->
+19    <!-- <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> -->
+20
+21
+22    <!-- Declare required sensor features -->
+23    <uses-feature
+23-->C:\Users\gontu\AndroidStudioProjects\HarClassifier\app\src\main\AndroidManifest.xml:16:5-98
+24        android:name="android.hardware.sensor.accelerometer"
+24-->C:\Users\gontu\AndroidStudioProjects\HarClassifier\app\src\main\AndroidManifest.xml:16:19-71
+25        android:required="true" />
+25-->C:\Users\gontu\AndroidStudioProjects\HarClassifier\app\src\main\AndroidManifest.xml:16:72-95
+26    <uses-feature
+26-->C:\Users\gontu\AndroidStudioProjects\HarClassifier\app\src\main\AndroidManifest.xml:17:5-94
+27        android:name="android.hardware.sensor.gyroscope"
+27-->C:\Users\gontu\AndroidStudioProjects\HarClassifier\app\src\main\AndroidManifest.xml:17:19-67
+28        android:required="true" />
+28-->C:\Users\gontu\AndroidStudioProjects\HarClassifier\app\src\main\AndroidManifest.xml:17:68-91
+29
+30    <permission
+30-->[androidx.core:core:1.15.0] C:\Users\gontu\.gradle\caches\8.11.1\transforms\cc4c640503b0b71702aeaeda10512038\transformed\core-1.15.0\AndroidManifest.xml:22:5-24:47
+31        android:name="com.example.harclassifier.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+31-->[androidx.core:core:1.15.0] C:\Users\gontu\.gradle\caches\8.11.1\transforms\cc4c640503b0b71702aeaeda10512038\transformed\core-1.15.0\AndroidManifest.xml:23:9-81
+32        android:protectionLevel="signature" />
+32-->[androidx.core:core:1.15.0] C:\Users\gontu\.gradle\caches\8.11.1\transforms\cc4c640503b0b71702aeaeda10512038\transformed\core-1.15.0\AndroidManifest.xml:24:9-44
+33
+34    <uses-permission android:name="com.example.harclassifier.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" /> <!-- Application Definition -->
+34-->[androidx.core:core:1.15.0] C:\Users\gontu\.gradle\caches\8.11.1\transforms\cc4c640503b0b71702aeaeda10512038\transformed\core-1.15.0\AndroidManifest.xml:26:5-97
+34-->[androidx.core:core:1.15.0] C:\Users\gontu\.gradle\caches\8.11.1\transforms\cc4c640503b0b71702aeaeda10512038\transformed\core-1.15.0\AndroidManifest.xml:26:22-94
+35    <application
+35-->C:\Users\gontu\AndroidStudioProjects\HarClassifier\app\src\main\AndroidManifest.xml:20:5-51:19
+36        android:allowBackup="true"
+36-->C:\Users\gontu\AndroidStudioProjects\HarClassifier\app\src\main\AndroidManifest.xml:21:9-35
+37        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+37-->[androidx.core:core:1.15.0] C:\Users\gontu\.gradle\caches\8.11.1\transforms\cc4c640503b0b71702aeaeda10512038\transformed\core-1.15.0\AndroidManifest.xml:28:18-86
+38        android:dataExtractionRules="@xml/data_extraction_rules"
+38-->C:\Users\gontu\AndroidStudioProjects\HarClassifier\app\src\main\AndroidManifest.xml:22:9-65
+39        android:debuggable="true"
+40        android:extractNativeLibs="false"
+41        android:fullBackupContent="@xml/backup_rules"
+41-->C:\Users\gontu\AndroidStudioProjects\HarClassifier\app\src\main\AndroidManifest.xml:23:9-54
+42        android:icon="@mipmap/ic_launcher"
+42-->C:\Users\gontu\AndroidStudioProjects\HarClassifier\app\src\main\AndroidManifest.xml:24:9-43
+43        android:label="@string/app_name"
+43-->C:\Users\gontu\AndroidStudioProjects\HarClassifier\app\src\main\AndroidManifest.xml:25:9-41
+44        android:roundIcon="@mipmap/ic_launcher_round"
+44-->C:\Users\gontu\AndroidStudioProjects\HarClassifier\app\src\main\AndroidManifest.xml:26:9-54
+45        android:supportsRtl="true"
+45-->C:\Users\gontu\AndroidStudioProjects\HarClassifier\app\src\main\AndroidManifest.xml:27:9-35
+46        android:theme="@style/Theme.HarClassifier"
+46-->C:\Users\gontu\AndroidStudioProjects\HarClassifier\app\src\main\AndroidManifest.xml:28:9-51
+47        android:usesCleartextTraffic="true" >
+47-->C:\Users\gontu\AndroidStudioProjects\HarClassifier\app\src\main\AndroidManifest.xml:29:9-44
+48
+49        <!-- Main Activity Declaration -->
+50        <activity
+50-->C:\Users\gontu\AndroidStudioProjects\HarClassifier\app\src\main\AndroidManifest.xml:33:5-43:12
+51            android:name="com.example.harclassifier.MainActivity"
+51-->C:\Users\gontu\AndroidStudioProjects\HarClassifier\app\src\main\AndroidManifest.xml:34:9-37
+52            android:exported="true"
+52-->C:\Users\gontu\AndroidStudioProjects\HarClassifier\app\src\main\AndroidManifest.xml:35:5-28
+53            android:screenOrientation="portrait"
+53-->C:\Users\gontu\AndroidStudioProjects\HarClassifier\app\src\main\AndroidManifest.xml:37:5-41
+54            android:windowSoftInputMode="adjustResize" >
+54-->C:\Users\gontu\AndroidStudioProjects\HarClassifier\app\src\main\AndroidManifest.xml:36:5-47
+55            <intent-filter>
+55-->C:\Users\gontu\AndroidStudioProjects\HarClassifier\app\src\main\AndroidManifest.xml:39:5-42:21
+56                <action android:name="android.intent.action.MAIN" />
+56-->C:\Users\gontu\AndroidStudioProjects\HarClassifier\app\src\main\AndroidManifest.xml:40:9-61
+56-->C:\Users\gontu\AndroidStudioProjects\HarClassifier\app\src\main\AndroidManifest.xml:40:17-58
+57
+58                <category android:name="android.intent.category.LAUNCHER" />
+58-->C:\Users\gontu\AndroidStudioProjects\HarClassifier\app\src\main\AndroidManifest.xml:41:9-69
+58-->C:\Users\gontu\AndroidStudioProjects\HarClassifier\app\src\main\AndroidManifest.xml:41:19-66
+59            </intent-filter>
+60        </activity>
+61
+62        <service
+62-->C:\Users\gontu\AndroidStudioProjects\HarClassifier\app\src\main\AndroidManifest.xml:46:1-49:46
+63            android:name="com.example.harclassifier.SensorService"
+63-->C:\Users\gontu\AndroidStudioProjects\HarClassifier\app\src\main\AndroidManifest.xml:47:1-30
+64            android:exported="false"
+64-->C:\Users\gontu\AndroidStudioProjects\HarClassifier\app\src\main\AndroidManifest.xml:48:5-29
+65            android:foregroundServiceType="health" />
+65-->C:\Users\gontu\AndroidStudioProjects\HarClassifier\app\src\main\AndroidManifest.xml:49:5-43
+66
+67        <activity
+67-->[androidx.compose.ui:ui-tooling-android:1.7.0] C:\Users\gontu\.gradle\caches\8.11.1\transforms\4364d0ecb8d9604d144e2e4b628f4361\transformed\ui-tooling-release\AndroidManifest.xml:23:9-25:39
+68            android:name="androidx.compose.ui.tooling.PreviewActivity"
+68-->[androidx.compose.ui:ui-tooling-android:1.7.0] C:\Users\gontu\.gradle\caches\8.11.1\transforms\4364d0ecb8d9604d144e2e4b628f4361\transformed\ui-tooling-release\AndroidManifest.xml:24:13-71
+69            android:exported="true" />
+69-->[androidx.compose.ui:ui-tooling-android:1.7.0] C:\Users\gontu\.gradle\caches\8.11.1\transforms\4364d0ecb8d9604d144e2e4b628f4361\transformed\ui-tooling-release\AndroidManifest.xml:25:13-36
+70        <activity
+70-->[androidx.compose.ui:ui-test-manifest:1.7.0] C:\Users\gontu\.gradle\caches\8.11.1\transforms\28d989c4b6f3ab18a4ea1dfb7fc90209\transformed\ui-test-manifest-1.7.0\AndroidManifest.xml:23:9-25:39
+71            android:name="androidx.activity.ComponentActivity"
+71-->[androidx.compose.ui:ui-test-manifest:1.7.0] C:\Users\gontu\.gradle\caches\8.11.1\transforms\28d989c4b6f3ab18a4ea1dfb7fc90209\transformed\ui-test-manifest-1.7.0\AndroidManifest.xml:24:13-63
+72            android:exported="true" />
+72-->[androidx.compose.ui:ui-test-manifest:1.7.0] C:\Users\gontu\.gradle\caches\8.11.1\transforms\28d989c4b6f3ab18a4ea1dfb7fc90209\transformed\ui-test-manifest-1.7.0\AndroidManifest.xml:25:13-36
+73
+74        <provider
+74-->[androidx.emoji2:emoji2:1.3.0] C:\Users\gontu\.gradle\caches\8.11.1\transforms\8c1355825fc30a64385d60ac9a1711b4\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+75            android:name="androidx.startup.InitializationProvider"
+75-->[androidx.emoji2:emoji2:1.3.0] C:\Users\gontu\.gradle\caches\8.11.1\transforms\8c1355825fc30a64385d60ac9a1711b4\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+76            android:authorities="com.example.harclassifier.androidx-startup"
+76-->[androidx.emoji2:emoji2:1.3.0] C:\Users\gontu\.gradle\caches\8.11.1\transforms\8c1355825fc30a64385d60ac9a1711b4\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+77            android:exported="false" >
+77-->[androidx.emoji2:emoji2:1.3.0] C:\Users\gontu\.gradle\caches\8.11.1\transforms\8c1355825fc30a64385d60ac9a1711b4\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+78            <meta-data
+78-->[androidx.emoji2:emoji2:1.3.0] C:\Users\gontu\.gradle\caches\8.11.1\transforms\8c1355825fc30a64385d60ac9a1711b4\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+79                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+79-->[androidx.emoji2:emoji2:1.3.0] C:\Users\gontu\.gradle\caches\8.11.1\transforms\8c1355825fc30a64385d60ac9a1711b4\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+80                android:value="androidx.startup" />
+80-->[androidx.emoji2:emoji2:1.3.0] C:\Users\gontu\.gradle\caches\8.11.1\transforms\8c1355825fc30a64385d60ac9a1711b4\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+81            <meta-data
+81-->[androidx.lifecycle:lifecycle-process:2.8.7] C:\Users\gontu\.gradle\caches\8.11.1\transforms\132d3149c4641314563db5265a201767\transformed\lifecycle-process-2.8.7\AndroidManifest.xml:29:13-31:52
+82                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+82-->[androidx.lifecycle:lifecycle-process:2.8.7] C:\Users\gontu\.gradle\caches\8.11.1\transforms\132d3149c4641314563db5265a201767\transformed\lifecycle-process-2.8.7\AndroidManifest.xml:30:17-78
+83                android:value="androidx.startup" />
+83-->[androidx.lifecycle:lifecycle-process:2.8.7] C:\Users\gontu\.gradle\caches\8.11.1\transforms\132d3149c4641314563db5265a201767\transformed\lifecycle-process-2.8.7\AndroidManifest.xml:31:17-49
+84            <meta-data
+84-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\gontu\.gradle\caches\8.11.1\transforms\ad4bdf62069377546d44e567e9c5b9af\transformed\profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
+85                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+85-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\gontu\.gradle\caches\8.11.1\transforms\ad4bdf62069377546d44e567e9c5b9af\transformed\profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
+86                android:value="androidx.startup" />
+86-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\gontu\.gradle\caches\8.11.1\transforms\ad4bdf62069377546d44e567e9c5b9af\transformed\profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
+87        </provider>
+88
+89        <receiver
+89-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\gontu\.gradle\caches\8.11.1\transforms\ad4bdf62069377546d44e567e9c5b9af\transformed\profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
+90            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+90-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\gontu\.gradle\caches\8.11.1\transforms\ad4bdf62069377546d44e567e9c5b9af\transformed\profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
+91            android:directBootAware="false"
+91-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\gontu\.gradle\caches\8.11.1\transforms\ad4bdf62069377546d44e567e9c5b9af\transformed\profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
+92            android:enabled="true"
+92-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\gontu\.gradle\caches\8.11.1\transforms\ad4bdf62069377546d44e567e9c5b9af\transformed\profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
+93            android:exported="true"
+93-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\gontu\.gradle\caches\8.11.1\transforms\ad4bdf62069377546d44e567e9c5b9af\transformed\profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
+94            android:permission="android.permission.DUMP" >
+94-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\gontu\.gradle\caches\8.11.1\transforms\ad4bdf62069377546d44e567e9c5b9af\transformed\profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
+95            <intent-filter>
+95-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\gontu\.gradle\caches\8.11.1\transforms\ad4bdf62069377546d44e567e9c5b9af\transformed\profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
+96                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+96-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\gontu\.gradle\caches\8.11.1\transforms\ad4bdf62069377546d44e567e9c5b9af\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
+96-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\gontu\.gradle\caches\8.11.1\transforms\ad4bdf62069377546d44e567e9c5b9af\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
+97            </intent-filter>
+98            <intent-filter>
+98-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\gontu\.gradle\caches\8.11.1\transforms\ad4bdf62069377546d44e567e9c5b9af\transformed\profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
+99                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+99-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\gontu\.gradle\caches\8.11.1\transforms\ad4bdf62069377546d44e567e9c5b9af\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
+99-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\gontu\.gradle\caches\8.11.1\transforms\ad4bdf62069377546d44e567e9c5b9af\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
+100            </intent-filter>
+101            <intent-filter>
+101-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\gontu\.gradle\caches\8.11.1\transforms\ad4bdf62069377546d44e567e9c5b9af\transformed\profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
+102                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+102-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\gontu\.gradle\caches\8.11.1\transforms\ad4bdf62069377546d44e567e9c5b9af\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
+102-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\gontu\.gradle\caches\8.11.1\transforms\ad4bdf62069377546d44e567e9c5b9af\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
+103            </intent-filter>
+104            <intent-filter>
+104-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\gontu\.gradle\caches\8.11.1\transforms\ad4bdf62069377546d44e567e9c5b9af\transformed\profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
+105                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+105-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\gontu\.gradle\caches\8.11.1\transforms\ad4bdf62069377546d44e567e9c5b9af\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
+105-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\gontu\.gradle\caches\8.11.1\transforms\ad4bdf62069377546d44e567e9c5b9af\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
+106            </intent-filter>
+107        </receiver>
+108    </application>
+109
+110</manifest>
