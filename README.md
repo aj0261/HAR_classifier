@@ -93,4 +93,11 @@ python app.py
 - **Project Report (PDF)**: [Download the report](https://drive.google.com/file/d/1qsoqbzCUXe_BxZ8T2tX2JuF5tg-JAVzi/view?usp=sharing)
 
 ---
+## Contributers
+Ajay Kumar Meena
 
+Gonut Sandep Kumar
+
+Prabhat Kumar
+
+Vikash Kumar
