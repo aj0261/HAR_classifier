@@ -8,21 +8,7 @@ An end‑to‑end pipeline for real‑time human activity recognition using smar
 
 ---
 
-## 📖 Table of Contents
 
-1. [Features](#features)  
-2. [Architecture](#architecture)  
-3. [Prerequisites](#prerequisites)  
-4. [Installation](#installation)  
-5. [Data Collection](#data-collection)  
-6. [Model Training](#model-training)  
-7. [Running the Prediction Server](#running-the-prediction-server)  
-8. [Har Classifier App Usage](#har-classifier-app-usage)  
-9. [Drive Links](#drive-links)  
-10. [Future Scope](#future-scope)  
-11. [Authors & License](#authors--license)  
-
----
 
 ## ✨ Features
 
@@ -40,3 +26,15 @@ An end‑to‑end pipeline for real‑time human activity recognition using smar
 │ Sensor Logger     │     │ Prediction│     │ ML Processing    │     │ Dashboard │
 │ Android App       │<--->│ Server    │<--->│ (TCN Inference)  │<--->│ (Optional)│
 └───────────────────┘     └───────────┘     └──────────────────┘     └───────────┘
+
+## 📱 Har Classifier App Usage
+
+1. Install **Har Classifier** on your Android device.  
+2. Enter the **Server IP** and **Port** (e.g., `192.168.1.100:5000`).  
+3. Tap **Connect** to start streaming sensor data.  
+4. View live **“Predicted Activity: ___”** updates on the screen.  
+
+## 📂 Drive Links
+
+- **PPT Presentation**: [Download the slides](https://docs.google.com/presentation/d/12hkaRYKkBgDTHmYy-fuqzSruyHd_J85eP36iDvF691g/edit?slide=id.g34f38648671_0_38#slide=id.g34f38648671_0_38)  
+- **Project Report (PDF)**: [Download the report](https://drive.google.com/file/d/1qsoqbzCUXe_BxZ8T2tX2JuF5tg-JAVzi/view?usp=sharing)  
